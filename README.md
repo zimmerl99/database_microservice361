@@ -49,4 +49,4 @@ for life in data['data']:<br>
 <br>
 
 **C. UML sequence diagram showing how requesting and receiving data works**<br>
-![alt text](https://github.com/zimmerl99/database_microservice361/blob/main/UML%20Sequence%20Diagram.png?raw=true)
+![alt text](UML%20Sequence%20Diagram.png)
