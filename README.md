@@ -1,21 +1,21 @@
 This microservice is a database system coupled with a python API that allows for CREATE, READ, and DELETE functionality. It is hosted via MariaDB and accessed with localhost at the address http://127.0.0.1:8000/. Currently it only works for programs on the same computer because it is a localhost, but it is still a microservice with everything transferred by HTTP. It can also be easily modified to have online hosting, but that costs money so currently its not a feature.
 
 A. Instructions for how to REQUEST data from the database.
-    To request data from the database, you must first write an SQL query that will retrieve all the data within the database.
-    
-    The example call for the test program is: SELECT * FROM lifes
+To request data from the database, you must first write an SQL query that will retrieve all the data within the database.
 
-    This selects all the data in the lifes table. Once you have made your SQL query, we will add a GET request method to the API with your query which will inject this query into the database.
+The example call for the test program is: SELECT * FROM lifes
 
-    To request data from the database within your program, initiate an HTTP GET request to the address http://127.0.0.1:8000/your_program
-    In the example program, this looks like this: requests.get("http://127.0.0.1:8000/lifes")
+This selects all the data in the lifes table. Once you have made your SQL query, we will add a GET request method to the API with your query which will inject this query into the database.
 
-    This calls the GET method within the API and queries the database for your requested data
+To request data from the database within your program, initiate an HTTP GET request to the address http://127.0.0.1:8000/your_program
+In the example program, this looks like this: requests.get("http://127.0.0.1:8000/lifes")
 
-    -- Full example call --
-    HTTP GET request within the test program: requests.get("http://127.0.0.1:8000/lifes")
-    SQL query within the API: cursor.execute("SELECT * FROM lifes")
-                              results = cursor.fetchall()
+This calls the GET method within the API and queries the database for your requested data
+
+-- Full example call --
+HTTP GET request within the test program: requests.get("http://127.0.0.1:8000/lifes")
+SQL query within the API: cursor.execute("SELECT * FROM lifes")
+                            results = cursor.fetchall()
     
     
 
@@ -48,4 +48,3 @@ B. Instructions for how to RECEIVE data from the database. Include an example ca
 
 
 C. UML sequence diagram showing how requesting and receiving data works
-    
