@@ -1,7 +1,7 @@
 This microservice is a database system coupled with a python API that allows for CREATE, READ, and DELETE functionality. It is hosted via MariaDB and accessed with localhost at the address http://127.0.0.1:8000/. Currently it only works for programs on the same computer because it is a localhost, but it is still a microservice with everything transferred by HTTP. It can also be easily modified to have online hosting, but that costs money so currently its not a feature.
 
-A. Instructions for how to REQUEST data from the database.
-\nTo request data from the database, you must first write an SQL query that will retrieve all the data within the database.
+A. Instructions for how to REQUEST data from the database.<br>
+To request data from the database, you must first write an SQL query that will retrieve all the data within the database.
 
 The example call for the test program is: SELECT * FROM lifes
 
@@ -12,9 +12,9 @@ In the example program, this looks like this: requests.get("http://127.0.0.1:800
 
 This calls the GET method within the API and queries the database for your requested data
 
--- Full example call --
-HTTP GET request within the test program: requests.get("http://127.0.0.1:8000/lifes")
-SQL query within the API: cursor.execute("SELECT * FROM lifes")
+-- Full example call --<br>
+HTTP GET request within the test program: requests.get("http://127.0.0.1:8000/lifes")<br>
+SQL query within the API: cursor.execute("SELECT * FROM lifes")<br>
                             results = cursor.fetchall()
     
     
